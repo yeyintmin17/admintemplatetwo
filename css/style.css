@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro' , sans-serif;
+    font-size: 13px;
+    background-color: #f4f4f4;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Start Navbar */
+
+.sidebars{
+    min-height: 100vh;
+    background-color: #000;
+}
+
+.nav-item.nav-categories{
+    color: #fff;
+    margin: 10px 0;
+}
+
+.sidebarlinks, 
+.sidebarlinks .fas{
+    color: #fff;
+    opacity: 0.9;
+
+    transition: all 0.3s;
+}
+
+.sidebarlinks:hover, 
+.sidebarlinks .fas:hover{
+    background-color: #666;
+    /* color: #fff; */
+    
+    opacity: 1;
+}
+
+
+/* End Navbar */
