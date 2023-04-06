@@ -44,5 +44,20 @@ a{
     opacity: 1;
 }
 
+.sidebarlinks{
+    position: relative;
+}
+
+.mores{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.currents{
+    background-color: #333;
+    box-shadow: 1px 0 5px #222;
+}
 
 /* End Navbar */
