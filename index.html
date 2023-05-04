@@ -23,6 +23,7 @@
                 <div id="nav" class="navbar-collapse">
                     <div class="container-fluid">
                         <div class="row">
+                            <!-- Start Left Sidebar -->
                             <div class="col-lg-2 col-md-3 vh-100 overflow-auto fixed-top sidebars">
                                 <ul class="navbar-nav flex-column mt-4">
                                     <li class="nav-item nav-categories">Main</li>
@@ -359,6 +360,158 @@
                                     </li>
                                 </ul>
                             </div>
+                            <!-- End Left Sidebar -->
+
+                            <!-- Start Top Sidebar -->
+                            <div class="col-lg-10 col-md-9 fixed-top ms-auto topnavbars">
+                                <div class="row">
+                                    <nav class="navbar navbar-expand navbar-light bg-white shadow">
+                                        <!-- start search -->
+                                        <form action="" method="" class="me-auto">
+                                            <div class="input-group">
+                                                <input type="text" name="searech" id="search" class="form-control border-0 shadow-none" placeholder="Search Something..."/>
+
+                                                <div class="input-group-append">
+                                                    <button type="submit" class="btn btn-primary">
+                                                        <i class="fas fa-search"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- end search -->
+
+                                        <!-- start notify & userlogout -->
+                                        <ul class="navbar-nav pe-5 me-5">
+                                            <!-- start notify -->
+                                            <li class="nav-item dropdowns">
+                                                <a href="javascript:void(0);" class="nav-line dropbtn" onClick="dropbtn(event)">
+                                                    <i class="fas fa-bell"></i>
+                                                    <span class="badge bg-danger">5+</span>
+                                                </a>
+
+                                                <div class="dropdown-contents mydropdowns">
+                                                    <h6>Alert Center</h6>
+
+                                                    <a href="javascript:void(0);" class="d-flex">
+                                                        <div>
+                                                            <i class="fas fa-file-alt"></i>
+                                                        </div>
+
+                                                        <div>
+                                                            <p class="small text-muted">3 May 2023</p>
+                                                            <i>A new memebers created</i>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="javascript:void(0);" class="d-flex">
+                                                        <div>
+                                                            <i class="fas fa-database text-warning"></i>
+                                                        </div>
+
+                                                        <div>
+                                                            <p class="small text-muted">3 May 2023</p>
+                                                            <i>Some of your data are missing.</i>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="javascript:void(0);" class="d-flex">
+                                                        <div>
+                                                            <i class="fas fa-user text-info"></i>
+                                                        </div>
+
+                                                        <div>
+                                                            <p class="small text-muted">3 May 2023</p>
+                                                            <i>New users invited you.</i>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="javascript:void(0);" class="small text-muted text-center">Show All Notification</a>
+                                                </div>
+                                            </li>
+                                            <!-- end notify -->
+
+                                            <!-- start message -->
+                                            <li class="nav-item dropdowns mx-3">
+                                                <a href="javascript:void(0);" class="nav-line dropbtn" onClick="dropbtn(event)">
+                                                    <i class="fas fa-envelope"></i>
+                                                    <span class="badge bg-danger">7</span>
+                                                </a>
+
+                                                <div class="dropdown-contents mydropdowns">
+                                                    <h6>Message Center</h6>
+
+                                                    <a href="javascript:void(0);" class="d-flex">
+                                                        <div class="me-3">
+                                                            <img src="./assets/imgs/users/user1.jpg" alt="user1" width="30" height="30" class="rounded-circle">
+                                                        </div>
+
+                                                        <div>
+                                                            <p class="small text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                                            <i>Mrs.July - 25m ago</i>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="javascript:void(0);" class="d-flex">
+                                                        <div class="me-3">
+                                                            <img src="./assets/imgs/users/user2.jpg" alt="user2" width="30" height="30" class="rounded-circle">
+                                                        </div>
+
+                                                        <div>
+                                                            <p class="small text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                                            <i>Mrs.Anton - 40m ago</i>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="javascript:void(0);" class="d-flex">
+                                                        <div class="me-3">
+                                                            <img src="./assets/imgs/users/user3.jpg" alt="user3" width="30" height="30" class="rounded-circle">
+                                                        </div>
+
+                                                        <div>
+                                                            <p class="small text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                                            <i>Mrs.PaPa - 55m ago</i>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="javascript:void(0);" class="small text-muted text-center">Read More Messages</a>
+                                                </div>
+                                            </li>
+                                            <!-- end message -->
+
+                                            <!-- start user logout -->
+                                            <li class="nav-item dropdown">
+                                                <a href="javascript:void(0)" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                                    <span class="text-muted small me-2">Admin</span>
+                                                    <img src="./assets/imgs/users/user1.jpg" alt="user1" width="25" class="rounded-circle"/>
+                                                </a>
+
+                                                <div class="dropdown-menu">
+                                                    <a href="javascript:void(0)" class="dropdown-item">
+                                                        <i class="fas fa-user fa-sm text-muted me-2"></i> Profile
+                                                    </a>
+
+                                                    <a href="javascript:void(0)" class="dropdown-item">
+                                                        <i class="fas fa-cogs fa-sm text-muted me-2"></i> Settings
+                                                    </a>
+
+                                                    <a href="javascript:void(0)" class="dropdown-item">
+                                                        <i class="fas fa-list fa-sm text-muted me-2"></i> Activity Log
+                                                    </a>
+
+                                                    <div class="dropdown-divider"></div>
+
+                                                    <a href="javascript:void(0)" class="dropdown-item">
+                                                        <i class="fas fa-sign-out-alt fa-sm text-muted me-2"></i> Logout
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <!-- end user logout -->
+                                        </ul>
+                                        <!-- end notify & userlogout -->
+                                    </nav>
+                                </div>
+                            </div>
+                            <!-- End Top Sidebar -->
                         </div>
                     </div>
                 </div>
@@ -371,7 +524,25 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-10 col-md-9 ms-auto">
-                        
+                        <!-- Start Shortcut Area -->
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <div class="card py-2 border-left-primarys shadow">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+
+                                            </div>
+    
+                                            <div class="col">
+                                                <i class="fas kfa-calendar fa-2x text-secondary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Shortcut Area -->
                     </div>
                 </div>
             </div>

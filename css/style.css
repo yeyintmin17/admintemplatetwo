@@ -61,3 +61,46 @@ a{
 }
 
 /* End Navbar */
+
+/* Start Top Sidebar  */
+
+/* start notify & user logout */
+
+.dropdowns{
+    position: relative;
+}
+
+.dropbtn{
+    text-decoration: none;
+}
+
+.dropdown-contents{
+    min-width: 230px;
+    background-color: #f6f6f6;
+    display: none;
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.dropdown-contents a{
+    color: #000;
+    text-decoration: none;
+
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-contents a:hover{
+    background-color: #ddd;
+}
+
+.show{
+    display: block;
+}
+
+/* end notify & user logout */
+
+/* End Top Sidebar  */
